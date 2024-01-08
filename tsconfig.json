@@ -16,7 +16,13 @@
     "incremental": true,
     "paths": {
       "@/*": ["./src/*"],
-      "@/public*": ["./public/*"]
+      "@/utils*": ["./src/utils/*"],
+      "@/public*": ["./public/*"],
+      "@/lib*": ["./src/lib/*"],
+      "@/styles*": ["./src/styles/*"],
+      "@/components*": ["./src/components/*"],
+      "@/pages*": ["./src/pages/*"],
+      "@/sanity*": ["./src/sanity/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
