@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light mode colors */
+    --theme-accent-two: 195, 149, 63; /* #D3BC8D - Light blue-gray background */
+    --theme-bg: 0, 0, 0; /* #05080F - Dark background for inverted theme */
+    --theme-base: 240, 243, 250; /* #F0F3FA - Light text color for inverted theme */
+    --theme-accent: 143, 60, 251; /* #8F3CFB - Adjusted shade of blue */
+  }
+  @font-face {
+    font-family: Oswald;
+    src: url('https://fonts.googleapis.com/css2?family=Arvo&family=Oswald:wght@400;500;600;700&family=Playfair+Display+SC:wght@400;700;900&display=swap');
+  }
+  @font-face {
+    font-family: Aileron;
+    src: url('https://use.typekit.net/gqb5zul.css');
+  }
+
+  html,
+  body {
+    @apply scroll-smooth w-full font-medium h-dvh text-theme-base bg-theme-base;
+  }
+  p {
+    @apply tracking-wide  text-lg  font-aileron font-medium leading-[1.3];
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-oswald;
+  }
+}

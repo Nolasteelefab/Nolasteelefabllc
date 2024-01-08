@@ -1,15 +1,18 @@
+import Home from '@/components/home';
+import About from '@/components/home/about';
+import OurTeam from '@/components/home/ourTeam';
+import Portfolio from '@/components/home/portfolio';
+import Services from '@/components/home/services';
+import { Fragment } from 'react';
+
 export default function Main() {
   return (
-    <div
-      style={{
-        width: "100%",
-        height: "100dvh",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-      }}
-    >
-      <h1>Hello World</h1>
-    </div>
+    <Fragment>
+      <Home />
+      <About />
+      <Services />
+      <OurTeam />
+      <Portfolio />
+    </Fragment>
   );
 }
