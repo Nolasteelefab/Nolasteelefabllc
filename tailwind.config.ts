@@ -1,5 +1,3 @@
-import type { Config } from 'tailwindcss';
-
 function withOpacity(variableName: string) {
   return ({ opacityValue }: { opacityValue?: number }) => {
     if (opacityValue !== undefined) {
@@ -9,12 +7,12 @@ function withOpacity(variableName: string) {
   };
 }
 
-export default {
+module.exports = {
+  mode: 'jit',
   content: [
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/**/*.{js,ts,jsx,tsx,mdx}'
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}'
   ],
   theme: {
     extend: {
@@ -49,5 +47,5 @@ export default {
       }
     }
   },
-  plugins: []
-} satisfies Config;
+  plugins: [require('@tailwindcss/typography')]
+};

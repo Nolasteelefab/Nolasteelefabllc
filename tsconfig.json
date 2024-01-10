@@ -16,13 +16,13 @@
     "incremental": true,
     "paths": {
       "@/*": ["./src/*"],
-      "@/utils*": ["./src/utils/*"],
-      "@/public*": ["./public/*"],
-      "@/lib*": ["./src/lib/*"],
-      "@/styles*": ["./src/styles/*"],
-      "@/components*": ["./src/components/*"],
-      "@/pages*": ["./src/pages/*"],
-      "@/sanity*": ["./src/sanity/*"]
+      "@/utils/*": ["./src/utils/*"],
+      "@/public/*": ["./public/*"],
+      "@/lib/*": ["./src/lib/*"],
+      "@/styles/*": ["./src/styles/*"],
+      "@/components/*": ["./src/components/*"],
+      "@/pages/*": ["./src/pages/*"],
+      "@/sanity/*": ["./src/sanity/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
