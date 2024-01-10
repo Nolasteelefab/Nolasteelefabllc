@@ -1,20 +1,22 @@
+import ServiceAccordion from './tools/servAccordion';
+
 export default function Services() {
   return (
-    <div className="min-h-dvh bg-theme-accent flex px-4 md:px-6 flex-col py-12 md:py-24  w-full items-center justify-center   relative z-10">
-      <div className="w-full flex gap-1 flex-col  max-w-7xl">
-        <div className="w-fit">
+    <div className="min-h-dvh bg-theme-accent flex px-6 md:px-8 flex-col py-12 md:py-24  w-full items-center justify-center   relative z-10">
+      <div className="w-full justify-between flex gap-1 flex-col md:flex-row  max-w-7xl">
+        <div className="w-full">
           <h2 className="font-semibold text-7xl text-theme-accent-two mb-2 tracking-wider text-left ">
             Our Services
           </h2>
+          <p className="font-[500] break-words max-w-lg ">
+            NOLA Steele Fabrication and Erection provides high quality design and steel fabrication,
+            high quality structural steel erection, repair welding, ornamental iron, limited steel
+            demolition, and installation of commercial handrails.
+          </p>
         </div>
-        <p className="font-[500] break-words max-w-lg ">
-          NOLA Steele Fabrication and Erection provides high quality design and steel fabrication,
-          high quality structural steel erection, repair welding, ornamental iron, limited steel
-          demolition, and installation of commercial handrails.
-        </p>
+        <ServiceAccordion />
       </div>
-
-      <div className="absolute md:-top-40 -top-20 -right-40 lg:w-2/3 w-full h-80 -z-10">
+      <div className="absolute md:-top-30 -top-20 -right-40 lg:w-2/3 w-full h-96 -z-10">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 2000 2000"
